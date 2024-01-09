@@ -1,0 +1,45 @@
+.main {
+    background-image: url(../img/bckgrnd.trqs.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+.selectbtn{
+    font-family: 'Courier New', Courier, monospace;
+    height: 30px;
+    width: 200px;
+    background-color: rgba(255, 192, 203, 0.654);
+}
+.btn{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: pink;
+    height: 30px;
+}
+.pchange{
+    font-size: 20px;
+    text-align: center; 
+    text-transform: uppercase;   
+    background-color: rgb(30, 170, 156);
+    border-radius: 10px;
+    border: 2px solid turquoise;
+    height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.playerComputer {
+    font-weight: bolder;
+}
+.hidden {
+    display: none;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
