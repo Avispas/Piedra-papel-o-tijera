@@ -6,6 +6,7 @@
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
+    gap: 15px;
 }
 .selectbtn{
     font-family: 'Courier New', Courier, monospace;
@@ -28,11 +29,15 @@
     border-radius: 10px;
     border: 2px solid turquoise;
     height: 40px;
+    width: 300px;
     font-weight: bold;
     line-height: 40px;
 }
 .playerComputer {
     font-weight: bolder;
+    background-color: antiquewhite;
+    font-size: 18px;
+    padding: 10px;
 }
 .hidden {
     display: none;
@@ -42,4 +47,21 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    font-weight: bold;
+}
+.player, .computer{
+    background-color: pink;
+    border: 5px solid rgb(217, 146, 158);
+    height: 70px;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+
+}
+.emoji{
+    font-size: 35px;
+}
+.disapeared {
+    display: none;
 }

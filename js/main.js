@@ -12,6 +12,7 @@ let pC = 0;
 let pP = 0;
 const emojiPlayer = document.querySelector('.chosePlayer');
 const emojiComputer = document.querySelector('.choseComputer');
+const divPink = document.querySelector('.js-div');
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 };
@@ -34,11 +35,10 @@ function printEmojisPlayer(piPaTi) {
     }
 };
 function play() {
-  const computerChoose = getRandomNumber(9);
-  printEmojisComputer(computerChoose);
-  printEmojisPlayer(piPaTi);
-  console.log(computerChoose);
   if (piPaTi.value != '') {
+    const computerChoose = getRandomNumber(9);
+    printEmojisComputer(computerChoose);
+    printEmojisPlayer(piPaTi);
     if (computerChoose <= 3) {
       if (piPaTi.value === 'piedra') {
         winLose.innerHTML = joint;
@@ -78,12 +78,14 @@ function points() {
   console.log(winLose.innerHTML);
   console.log(win);
 }
+console.log(divPink);
 function stop() {
   if (pP + pC === 10) {
     btnPlay.classList.add('hidden');
     piPaTi.classList.add('hidden');
-    btnReinicio.classList.remove('hidden');
-
+    divPink.classList.add('disapeared');
+    btnReinicio.classList.remove('hidden');  
+    console.log(divPink);
     if (pP > pC) {
       winLose.innerHTML = win + `&#129395;`;
     } else if (pP < pC) {
@@ -99,9 +101,7 @@ function handleClick(event) {
   event.preventDefault();
   play();
   points();
-  stop();
- 
-  
+  stop();  
 }
 
 btnPlay.addEventListener('click', handleClick);

@@ -10,7 +10,7 @@
 
 <body>
     <main class="main">
-        <h1>Juego Piedra, papel o tijera</h1>
+        <h1>Piedra, papel o tijera</h1>
         <form>
             <select name="" id="" placeholder="Seleccione su jugada" class="js-option selectbtn">
                 <option disabled selected value="">Seleccione su jugada</option>
@@ -20,17 +20,15 @@
             </select>
             <button class="js-btn-play btn">Jugar</button>
             <button class="btn hidden js-btn-reiniciar">Reiniciar juego</button>
-            <div class="div">
-                <p>Player: <span class="chosePlayer"></span></p>
-                <p>VS</p>
-                <p>Computer: <span class="choseComputer"></span></p>
-
-            </div>
-            
-            <p class="js-change-p pchange">¡Vamos a jugar!</p>
-            <p class="playerComputer">Jugador:</p> <span class="js-points-player"> </span>
-            <p class="playerComputer">Computadora:</p> <span class="js-points-computer"> </span>
         </form>
+        <div class="div js-div">
+            <p class="player">Player<span class="chosePlayer emoji"></span></p>
+            <p>VS</p>
+            <p class="computer">Computer<span class="choseComputer emoji"></span></p>    
+        </div>
+        <p class="js-change-p pchange">¡Vamos a jugar!</p>
+        <p class="playerComputer">Jugador: <span class="js-points-player "> </span></p> 
+        <p class="playerComputer">Computadora: <span class="js-points-computer"> </span></p> 
     </main>
     <script src="./js/main.js"></script>
 </body>
