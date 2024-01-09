@@ -7,6 +7,7 @@
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
     gap: 15px;
+    text-align: center;
 }
 .selectbtn{
     font-family: 'Courier New', Courier, monospace;
