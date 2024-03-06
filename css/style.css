@@ -1,30 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .main {
-  background-image: url(../img/bckgrnd.png);
-  height: 100vh;
+  background-color: #FCE17A ;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
-
+.box{
+  background-color: #dfd6b5 ;
+  border: 4px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 0 5px 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .h1 {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Madimi One', sans-serif;
-}
-
-.h2 {
-  font-family: 'Madimi One', sans-serif;
-}
-.vs {
-  font-family: 'Madimi One', sans-serif;
-  align-self: center;
-}
-.selectbtn {
-  font-family: 'Courier New', Courier, monospace;
-  height: 40px;
-  background-color: rgb(231, 231, 231);
-  border-radius: 15px;
   padding: 10px;
+}
+.form{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 .btn {
   font-family: 'Courier New', Courier, monospace;
@@ -34,11 +41,33 @@
   border-radius: 15px;
   box-shadow: 2px 2px 2px 0;
   cursor: pointer;
-  height: 40px;
+  height: 60px;
+  width: 100px;
 }
 .btn:hover {
   transform: scale(1.2);
 }
+.h2 {
+  font-size: 20px;
+  font-family: 'Madimi One', sans-serif;
+}
+.vs {
+  font-family: 'Madimi One', sans-serif;
+  align-self: center;
+}
+.points{
+  font-family: 'Courier New', Courier, monospace;
+ text-align: center;
+}
+.selectbtn {
+  font-family: 'Courier New', Courier, monospace;
+  height: 40px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
 .pchange {
     font-family: 'Madimi One', sans-serif;
 
@@ -53,9 +82,9 @@
 }
 .play {
   display: flex;
-
-  gap: 10px;
+  gap: 20px;
   font-weight: bold;
+  padding: 10px;
 }
 .player,
 .computer {
@@ -69,4 +98,19 @@
 }
 .disapeared {
   display: none;
+}
+.img{
+  width: 300px;
+}
+.header{
+  background-color: #FCE17A;
+}
+.logo{
+  width: 60px;
+  padding: 10px;
+}
+.footer{
+  background-color: #FCE17A;
+  text-align: center;
+  height: 30vh;
 }
