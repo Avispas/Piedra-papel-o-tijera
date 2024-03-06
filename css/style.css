@@ -1,68 +1,72 @@
 .main {
-    background-image: url(../img/bckgrnd.trqs.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
-    gap: 15px;
-    text-align: center;
+  background-image: url(../img/bckgrnd.png);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.selectbtn{
-    font-family: 'Courier New', Courier, monospace;
-    height: 30px;
-    width: 200px;
-    background-color: rgba(255, 192, 203, 0.654);
-}
-.btn{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: pink;
-    height: 30px;
-}
-.pchange{
-    font-size: 20px;
-    text-align: center; 
-    text-transform: uppercase;   
-    background-color: rgb(30, 170, 156);
-    border-radius: 10px;
-    border: 2px solid turquoise;
-    height: 40px;
-    width: 300px;
-    font-weight: bold;
-    line-height: 40px;
-}
-.playerComputer {
-    font-weight: bolder;
-    background-color: antiquewhite;
-    font-size: 18px;
-    padding: 10px;
-}
-.hidden {
-    display: none;
-}
-.div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    font-weight: bold;
-}
-.player, .computer{
-    background-color: pink;
-    border: 5px solid rgb(217, 146, 158);
-    height: 70px;
-    font-size: 20px;
-    padding: 10px;
-    width: 100px;
-    text-align: center;
 
+.h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Madimi One', sans-serif;
 }
-.emoji{
-    font-size: 35px;
+
+.h2 {
+  font-family: 'Madimi One', sans-serif;
+}
+.vs {
+  font-family: 'Madimi One', sans-serif;
+  align-self: center;
+}
+.selectbtn {
+  font-family: 'Courier New', Courier, monospace;
+  height: 40px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 15px;
+  padding: 10px;
+}
+.btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 0;
+  cursor: pointer;
+  height: 40px;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.pchange {
+    font-family: 'Madimi One', sans-serif;
+
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+.play {
+  display: flex;
+
+  gap: 10px;
+  font-weight: bold;
+}
+.player,
+.computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.emoji {
+  font-size: 35px;
 }
 .disapeared {
-    display: none;
+  display: none;
 }

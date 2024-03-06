@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+    <link rel="icon" type="image/x-icon" href="./img/photodali.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra,papel o tijera</title>
-    <link rel="icon" type="image/x-icon" href="./img/photodali.PNG">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
+  <body>
     <main class="main">
-        <h1>Piedra, papel o tijera</h1>
-        <form>
-            <select name="" id="" placeholder="Seleccione su jugada" class="js-option selectbtn">
-                <option disabled selected value="">Seleccione su jugada</option>
-                <option value="piedra">Piedra</option>
-                <option value="papel">Papel</option>
-                <option value="tijera">Tijera</option>
-            </select>
-            <button class="js-btn-play btn">Jugar</button>
-            <button class="btn hidden js-btn-reiniciar">Reiniciar juego</button>
-        </form>
-        <div class="div js-div">
-            <p class="player">Player<span class="chosePlayer emoji"></span></p>
-            <p>VS</p>
-            <p class="computer">Computer<span class="choseComputer emoji"></span></p>    
+      <h1 class="h1">Rock, paper, scissors</h1>
+      <form>
+        <select placeholder="Seleccione su jugada" class="js-option selectbtn">
+          <option disabled selected value="">Select your move</option>
+          <option value="piedra">Rock</option>
+          <option value="papel">Paper</option>
+          <option value="tijera">Scissors</option>
+        </select>
+        <button class="js-btn-play btn">Play</button>
+        <button class="btn hidden js-btn-reiniciar">Restart game</button>
+      </form>
+      <p class="js-change-p pchange">Let's Play!</p>
+
+      <div class="play js-div">
+        <div class="player">
+          <h2 class="h2">Player <span class="js-points-player"> </span></h2>
+          <div class="chosePlayer emoji"></div>
         </div>
-        <p class="js-change-p pchange">¡Vamos a jugar!</p>
-        <p class="playerComputer">Jugador: <span class="js-points-player "> </span></p> 
-        <p class="playerComputer">Computadora: <span class="js-points-computer"> </span></p> 
+        <p class="vs">VS</p>
+        <div class="computer">
+          <h2 class="h2">Computer <span class="js-points-computer"> </span></h2>
+          <div class="choseComputer emoji"></div>
+        </div>
+      </div>
     </main>
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>
